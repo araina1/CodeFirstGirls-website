@@ -1,9 +1,11 @@
 body {
-    color: white;
-    background-color: #7B9D68;
-    font-family: arial;
-    margin: 0px;
+  color: white;
+  background-color: #7B9D68;
+  backgroud-image: url("jungle.jpg");
+  font-family: arial;
+  margin: 0px;
 }
+
 
 div {
   min-height: 100vh;
