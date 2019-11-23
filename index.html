@@ -4,53 +4,121 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>My first site</title>
+  <title>Endangered Species</title>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
-
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.1/css/all.css">
 </head>
 <body>
   <div>
-    <h1>Hello World!</h1>
-
-    <h2>Welcome to my site!</h2>
-
-  <!-- image of a duck -->
-    <img src="duck.jpg" width="200px">
+    <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about-us">About us</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Animals</a>
+      <div class="dropdown-content">
+        <a href="#">Sea Turtle</a>
+        <a href="#">Rhino</a>
+        <a href="#">Leopard</a>
+      </div>
+    </li>
   </div>
 
-  <div>
-    <p>I am currently learning to code with <a href="www.codefirstgirls.org.uk">Code First Girls</a>. Going over everything from how the
-    internet works, to creating websites and version control with git. A lot to cover in only 8 weeks!
-    Everyone should learn to code, here are some pretty good reasons why...</p>
-      <ol>
-        <li>HTML is cool</li>
-        <li id="lower">CSS is cooler</li>
-        <li id="lowest">JS is the best</li>
-      </ol>
+<div id="header-div">
+  <h1>Endangered Species</h1>
+</div>
+
+<div id="about-div" class="content-div">
+  <h2 class="about-text">What we're about...</h2>
+  <p class="about-text"> some text </p>
+</div>
+
+<div id="species-intro-div" class="content-div">
+  <h2>Top 3 Endangered Species</h2>
+  <p>Click through below to learn more about each type of species under threat!</p>
+  <div class="row">
+    <a href="#"><div class="column" id="seaturtle-column">
+      <h2>Sea Turtle</h2>
+    </div></a>
+    <a href="#"><div class="column" id="rhino-column">
+      <h2>Rhino</h2>
+    </div></a>
+    <a href="#"><div class="column" id="leopard-column">
+      <h2>Leopard</h2>
+    </div></a>
+  </div>
+</div>
+
+  <!--Donation Sign Up Section-->
+  <div id="donate-div" class="content-div">
+    <h2>Interested in saving one of the above species?</h2>
+    <p>You can make a difference to their lives today! Just £5 can go towards anti-poaching measures, such as GPS trackers, education and conservation programmes, and wildlife sanctuaries.</p>
+  </div>
+
+<!--
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+      <img src="img/logo.png">
+    <h3>About<span>Eduonix</span></h3>
+
+    <p class="footer-links">
+      <a href="#">Home</a> |
+      <a href="#">Blog</a> |
+      <a href="#">About</a> |
+      <a href="#">Contact</a>
+    </p>
+
+    <p class="footer-company-name">© 2019 Eduonix Learning Solutions Pvt. Ltd.</p>
+  </div>
+
+  <div class="footer-center">
+    <div>
+      <i class="fa fa-map-marker"></i>
+        <p><span>309 - Rupa Solitaire,
+         Bldg. No. A - 1, Sector - 1</span>
+        Mahape, Navi Mumbai - 400710</p>
     </div>
 
-  <div class="contrast">
-    <h2><em>What do you need to create a website?</em></h2>
-
-    <p>Not much!</p>
-      <ul>
-        <li>A computer (always a good start)</li>
-        <li>A text editor (I am using atom)</li>
-        <li>A web browser (I am using chrome)</li>
-        <li>Some HTML, CSS and JS files</li>
-      </ul>
+    <div>
+      <i class="fa fa-phone"></i>
+      <p>+91 22-27782183</p>
+    </div>
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:support@eduonix.com">support@eduonix.com</a></p>
+    </div>
   </div>
+  <div class="footer-right">
+    <p class="footer-company-about">
+      <span>About the company</span>
+      We offer training and skill building courses across Technology, Design, Management, Science and Humanities.</p>
 
-  <br>
+  </div>
+</footer>
+-->
+  <!--footer-->
+  <footer id="footer-div">
+    <div id="footer-contents">
+      <ul>
+        <li>Arka Raina/Elisa Pun ©</li>
+        <li><a href="#contact" class="active">Contact Us</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#mission">Mission Statement</a></li>
+        <li><a href="#history">Our History</a></li>
+        <li><a href="#t&c">Terms & Conditions</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="#sitemap">Site map</a></li>
+      </ul>
+      <div class="footer-icons">
+        <ul class="footer-icon-list">
+          <li class="footer-icon"><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li class="footer-icon"><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li class="footer-icon"><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li class="footer-icon"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+          <li class="footer-icon"><a href="#"><i class="fab fa-youtube"></i></a></li>
+      </div>
+  </div>
+</footer>
 
-  <p>
-    Follow my progress on <a href="www.github.com">github</a>
-  </p>
 </body>
 </html>
-
-<div>
-
-
-</div>
