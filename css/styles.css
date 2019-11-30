@@ -29,6 +29,10 @@ body {
   width: 33.3vw;
   min-height: 100vh;
 }
+/*-- fix this as colour does not show on hover
+.column:hover {
+  color: #717171;
+} */
 
 /* Clear floats after the columns */
 .row:after {
@@ -63,7 +67,7 @@ body {
   width: 100vw;
 }
 
-h1, h2 {
+h1, h2, h3, h5 {
   text-align: center;
   margin: auto;
 }
@@ -78,6 +82,14 @@ h2 {
   padding-top: 5%;
 }
 
+h3 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
 img {
   display: flex;
   padding: 20px;
@@ -87,7 +99,7 @@ img {
 
 p {
   margin: 10vh 10vw;
-  font-size: 1.5em;
+  font-size: 1.25em;
   text-align: center;
 }
 
@@ -116,6 +128,13 @@ ul {
 #footer-contents {
 list-style: none;
 display: block;
+}
+
+#footer-icons {
+display: block;
+justify-content: center;
+align-items: center;
+flex-direction: column;
 }
 
 li {
@@ -171,8 +190,9 @@ li.dropdown {
   width: 30%;
   height: auto;
 
-  /* Sign up form Full-width input fields */
-  input[type=text], input[type=password] {
+  /* Full-width input fields for sign up form */
+
+    input[type=text], input[type=password] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -234,13 +254,10 @@ li.dropdown {
   /* Change styles for cancel button and signup button on extra small screens */
   @media screen and (max-width: 300px) {
     .cancelbtn, .signupbtn {
-       width: 100%;
+      width: 100%;
     }
+  }
 
-    @media (max-height:800px){
-    	footer { position: static; }
-    	header { padding-top:40px; }
-    }
 
 /* footer section */
 

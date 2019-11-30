@@ -52,7 +52,38 @@
   <div id="donate-div" class="content-div">
     <h2>Interested in saving one of the above species?</h2>
     <p>You can make a difference to their lives today! Just £5 can go towards anti-poaching measures, such as GPS trackers, education and conservation programmes, and wildlife sanctuaries.</p>
+
+    <!-- Sign up form-->
+
+    <form action="action_page.php">
+      <div class="container">
+        <h3>Sign Up</h3>
+        <p>Please fill in this form to create an account.</p>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+        <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>
+
+        <h5>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</h5>
+
+        <div class="clearfix">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <button type="submit" class="signupbtn">Sign Up</button>
+        </div>
+      </div>
+    </form>
   </div>
+
+
 
 <!--
 <footer class="footer-distributed">
@@ -116,6 +147,7 @@
           <li class="footer-icon"><a href="#"><i class="fab fa-instagram"></i></a></li>
           <li class="footer-icon"><a href="#"><i class="fab fa-linkedin"></i></a></li>
           <li class="footer-icon"><a href="#"><i class="fab fa-youtube"></i></a></li>
+        </ul>
       </div>
   </div>
 </footer>
