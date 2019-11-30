@@ -14,13 +14,9 @@ body {
   width: 100vw;
 }
 
-#about-div {
-  background-color: #27ae60;
-}
-
 #species-intro-div {
-  background-color: #fdfefe;
-  color: black;
+  background-color: #669999;
+  color: white;
 }
 
 /* Create three equal columns that floats next to each other */
@@ -29,10 +25,6 @@ body {
   width: 33.3vw;
   min-height: 100vh;
 }
-/*-- fix this as colour does not show on hover
-.column:hover {
-  color: #717171;
-} */
 
 /* Clear floats after the columns */
 .row:after {
@@ -54,8 +46,7 @@ body {
 }
 
 #donate-div {
-  background-color: #1d8348;
-  /*background-color: #1e8449;*/
+  background-color: #669999;
 }
 
 #footer-div {
@@ -67,7 +58,7 @@ body {
   width: 100vw;
 }
 
-h1, h2, h3, h5 {
+h1, h2 {
   text-align: center;
   margin: auto;
 }
@@ -82,14 +73,6 @@ h2 {
   padding-top: 5%;
 }
 
-h3 {
-  font-size: 1.5em;
-}
-
-h5 {
-  font-size: 1em;
-}
-
 img {
   display: flex;
   padding: 20px;
@@ -99,7 +82,7 @@ img {
 
 p {
   margin: 10vh 10vw;
-  font-size: 1.25em;
+  font-size: 1.5em;
   text-align: center;
 }
 
@@ -128,13 +111,6 @@ ul {
 #footer-contents {
 list-style: none;
 display: block;
-}
-
-#footer-icons {
-display: block;
-justify-content: center;
-align-items: center;
-flex-direction: column;
 }
 
 li {
@@ -190,9 +166,8 @@ li.dropdown {
   width: 30%;
   height: auto;
 
-  /* Full-width input fields for sign up form */
-
-    input[type=text], input[type=password] {
+  /* Sign up form Full-width input fields */
+  input[type=text], input[type=password] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -254,10 +229,13 @@ li.dropdown {
   /* Change styles for cancel button and signup button on extra small screens */
   @media screen and (max-width: 300px) {
     .cancelbtn, .signupbtn {
-      width: 100%;
+       width: 100%;
     }
-  }
 
+    @media (max-height:800px){
+    	footer { position: static; }
+    	header { padding-top:40px; }
+    }
 
 /* footer section */
 
@@ -321,10 +299,13 @@ li.dropdown {
       margin: 10px 15px;
       vertical-align: middle;
     }
+
     .footer-distributed .footer-center i.fa-envelope{
       font-size: 17px;
       line-height: 38px;
     }
+
+
     .footer-distributed{
     	background-color: pink;
     	box-sizing: border-box;
@@ -334,63 +315,80 @@ li.dropdown {
     	padding: 50px 50px 60px 50px;
     	margin-top: 80px;
     }
+
     .footer-distributed .footer-left,
     .footer-distributed .footer-center,
     .footer-distributed .footer-right{
     	display: inline-block;
     	vertical-align: top;
     }
+
     .footer-distributed .footer-left{
     	width: 30%;
     }
+
     .footer-distributed h3{
     	color:  #ffffff;
     	margin: 0;
     }
+
     .footer-distributed .footer-left img{
     	width: 30%;
     }
+
     .footer-distributed h3 span{
     	color:  #e0ac1c;
     }
+
+
     .footer-distributed .footer-links{
     	color:  #2C2D2C;
     	margin: 20px 0 12px;
     }
+
     .footer-distributed .footer-links a{
     	display:inline-block;
     	line-height: 1.8;
     	text-decoration: none;
     	color:  inherit;
     }
+
     .footer-distributed .footer-company-name{
     	color:  #8f9296;
     	font-size: 14px;
     	font-weight: normal;
     	margin: 0;
     }
+
     .footer-distributed .footer-center{
     	width: 35%;
     }
+
+
     .footer-distributed .footer-center p{
     	display: inline-block;
     	color: #ffffff;
     	vertical-align: middle;
     	margin:0;
     }
+
     .footer-distributed .footer-center p span{
     	display:block;
     	font-weight: normal;
     	font-size:14px;
     	line-height:2;
     }
+
     .footer-distributed .footer-center p a{
     	color:  #e0ac1c;
     	text-decoration: none;;
     }
+
+
     .footer-distributed .footer-right{
     	width: 30%;
     }
+
     .footer-distributed .footer-company-about{
     	line-height: 20px;
     	color:  #92999f;
@@ -398,6 +396,7 @@ li.dropdown {
     	font-weight: normal;
     	margin: 0;
     }
+
     .footer-distributed .footer-company-about span{
     	display: block;
     	color:  #ffffff;
@@ -405,9 +404,11 @@ li.dropdown {
     	font-weight: bold;
     	margin-bottom: 20px;
     }
+
     .footer-distributed .footer-icons{
     	margin-top: 25px;
     }
+
     .footer-distributed .footer-icons a{
     	display: inline-block;
     	width: 35px;
@@ -415,39 +416,48 @@ li.dropdown {
     	cursor: pointer;
     	background-color:  #33383b;
     	border-radius: 2px;
+
     	font-size: 20px;
     	color: #ffffff;
     	text-align: center;
     	line-height: 35px;
+
     	margin-right: 3px;
     	margin-bottom: 5px;
     }
+
 /** -- div.contrast h2 {
   transition: width 3s, height 3s, transform 3s;
 }
+
 div.contrast h2:hover {
   transition: width 4s, height 4s, transform 4s;
   transform: rotate(360deg);
   background: #FDD2FE;
   color: #000000;
 }
+
 div.contrast p {
   transition: width 2s;
 }
+
 div.contrast p:hover {
   padding: 10%;
   height: 10%;
   background: #57A6C3;
   color: #000000;
 }
+
 ul {
      list-style: none;
      display: flex;
 }
+
 li {
      margin: 0 20px;
      transition: 0.6s ease;
 }
+
 li:hover {
      font-size: 1.2em;
      transition: 0.6s ease;
